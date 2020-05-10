@@ -20,7 +20,7 @@ void deQueue(){
     if(front == -1)
         printf("Nuestro queue esta vacio. \n");
     else {
-        printf("se elimino el valor %d", values[front]);
+        printf("se elimino el valor %d \n", values[front]);
         front++;
         if(front > rear)
         front = rear = -1;
@@ -30,5 +30,6 @@ void deQueue(){
 int main(int argc, char const *argv[])
 {
     deQueue();
+    enQueue(10);
     return 0;
 }
